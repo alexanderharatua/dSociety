@@ -50,7 +50,6 @@ class GoogleController extends Controller
                 $newUser = User::create([
                     'name' => $user->name,
                     'email' => $user->email,
-                    'no_hp' => $user->no_hp,
                     'provider' => $driver,
                     'provider_id'=> $user->id,
                     'access_token'=> $user->token,
@@ -60,6 +59,7 @@ class GoogleController extends Controller
                 Auth::login($newUser);
      
                 return redirect('/home');
+                // dd($newUser);
             }
     
         } catch (Exception $e) {

@@ -218,14 +218,14 @@
 <ul class="p-dropdown-content">
     <li><a href="{{ route('login') }}">MASUK</a></li>
     <li><a href="{{ route('register') }}">DAFTAR</a></li>
-    <!-- <form method="POST" action="{{ route('logout') }}">  // ini kalau mau buat menu logout
+    <form method="POST" action="{{ route('logout') }}">   <!-- ini kalau mau buat menu logout !-->
         @csrf
          <li><a href="{{ route('logout') }}"
              onclick="event.preventDefault();
                 this.closest('form').submit();">
                 LOGOUT
         </a></li>
-     </form> -->
+     </form>
 </ul>
 </div>
 </li>
