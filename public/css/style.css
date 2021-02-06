@@ -202,7 +202,7 @@ section.dark,
  }
 }
 #page-content:not(.no-sidebar) {
- padding:40px 0
+ padding:0px 0
 }
 #page-content:not(.no-sidebar).sidebar-left>.container>.row,
 #page-content:not(.no-sidebar).sidebar-left>.container-wide>.row,
@@ -10247,7 +10247,7 @@ a.btn:not([href]):not([tabindex]) {
  position:relative;
  text-transform:uppercase;
  background-color: transparent;
- border-color:rgb(255, 69, 70) !important;
+ border-color:rgb(0, 0, 0) !important;
  border-width:1px;
  border-style:solid;
  color:rgb(17, 16, 16);

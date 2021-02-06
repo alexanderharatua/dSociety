@@ -214,18 +214,42 @@
 <ul>
 <li>
 <div class="p-dropdown">
-<a href="#"><i class="fas fa-user-circle "></i></a>
-<ul class="p-dropdown-content">
+<a href="#" style="font-family: Poppins; "> 
+    <?php 
+    if (Auth::check()) {
+     echo Auth::user()->name;
+    }
+    else 
+    {
+        echo "<i class='icon-user'></i> Account";
+    }
+    ?>
+    <i class="icon-chevron-down"> </i></a>
+    <ul class="p-dropdown-content">
+        <?php 
+            if (Auth::check()) {
+      
+       ?>
+        <li><a href="">Dashboard</a></li>
+       <li>
+            <form method="POST" action="{{ route('logout') }}">   <!-- ini kalau mau buat menu logout !-->
+                @csrf
+                <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                        this.closest('form').submit();">
+                        LOGOUT
+                </a>
+            </form>
+    </li>
+    <?php 
+        }
+    else {
+    ?>
     <li><a href="{{ route('login') }}">MASUK</a></li>
     <li><a href="{{ route('register') }}">DAFTAR</a></li>
-    <form method="POST" action="{{ route('logout') }}">   <!-- ini kalau mau buat menu logout !-->
-        @csrf
-         <li><a href="{{ route('logout') }}"
-             onclick="event.preventDefault();
-                this.closest('form').submit();">
-                LOGOUT
-        </a></li>
-     </form>
+    <?php } ?>
+         
+     
 </ul>
 </div>
 </li>

@@ -26,7 +26,7 @@ Route::get('/home', function () {
 });
 
 Route::get('/soal', function () {
-    return view('tryout');
+    return view('navigasi');
 });
 Route::get('/sekolah', function () {
     return view('sekolah');
