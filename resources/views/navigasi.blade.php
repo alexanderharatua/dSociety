@@ -7,13 +7,10 @@
          height: 100px;
          overflow: auto;
        }
-
-       .card-block {
-              height: 40px;
-              width: 260px;
-              background-color: rgb(235, 80, 80);
-              border: none;
-              background-position: center;
+       .card{
+              height: 50%;
+              width: 70%
+              text-align: center;
        }
        </style>
 <section id="page-content" class="sidebar-left">
@@ -34,8 +31,8 @@
         <!-- tengah -->
         <div class="content col-lg-6" style="border: 2px solid black; background:rgb(219, 242, 255); ">
                 <div class="row" style="padding:15px">
-                        <div class="content col-lg-12" style="background:rgb(255, 255, 255)">
-                            <img src="{{asset('plugins/orang.png')}}" style="width:65px; position:right" alt="icon orang">
+                        <div class="content col-lg-10" style="background:rgb(255, 255, 255)">
+                            
                            <p style="font-size:18px; color:black">Halo, 
                                    <?php
                                      echo Auth::user()->name;
@@ -50,11 +47,15 @@
                             </p>
                             <button type="button" class="btn btn-danger">Baca selengkapnya</button>
                         </div>
+                        <div class="content col-lg-2" style="background:rgb(255, 255, 255)">
+                            <img src="{{asset('plugins/orang.png')}}" style="width:75px" alt="icon orang">
+                        </div>
                 </div>
 
-               <div class="row" style="padding:15px">
+                     <div class="row" style="padding:15px">
+                            <p style="margin-bottom: 2px">Aktivitas</p>
                             <div class="content col-lg-12" style="background:rgb(255, 255, 255); padding:15px">
-                                   <div class="row">
+                                  <div class="row">
                                           <div class="col-sm">
                                                  <div class="row">
                                                         <div class="col-md-4">
@@ -102,11 +103,13 @@
                                          </div>
                                    </div>
                             </div>
-                      </div>
+                     </div>
 
                       <!--bawah -->
 
               <div class="row" style="padding: 15px">
+                     <p style="margin-bottom: 2px">Rekapitulasi Pemahaman</p>
+                     <p style="margin-left:95px; margin-bottom: 2px">Jadwal Try Out</p>
                      <div class="content col-lg-12" style="background:rgb(188, 203, 231); padding:15px">
                             <div class="row" style="padding: 10px">
                                    <div class="col-sm">
@@ -152,9 +155,43 @@
                                    <div class="col-sm">
                                           <div class="row">
                                                  <div class="overflow-auto" style="border: 2px solid black">
-                                                        <button type="button" class="btn btn-danger btn-block"></button>
-                                                        <button type="button" class="btn btn-info btn-block"></button>
-                                                        <button type="button" class="btn btn-info btn-block"></button>
+                                                        <div class="card" style="margin: 5px; background:rgb(236, 52, 83);">
+                                                               <div class="card-top">
+                                                                      <h6 style="margin: 10px">
+                                                                             <span class="text-danger mr-1">Matematika</span>
+                                                                             <span class="text-grey">Senin</span>
+                                                                             <span class="text-grey">31-12-2021</span>
+                                                                      </h6>
+                                                               </div>
+                                                        </div>
+                                                        <!-- Card -->
+                                                        <div class="card" style="margin: 5px">
+                                                               <div class="card-top">
+                                                                      <h6 style="margin: 10px">
+                                                                             <span class="text-danger mr-1">Matematika</span>
+                                                                             <span class="text-grey">Senin</span>
+                                                                             <span class="text-grey">31-12-2021</span>
+                                                                      </h6>
+                                                               </div>
+                                                        </div>
+                                                        <div class="card" style="margin: 5px">
+                                                               <div class="card-top">
+                                                                      <h6 style="margin: 10px">
+                                                                             <span class="text-danger mr-1">Matematika</span>
+                                                                             <span class="text-grey">Senin</span>
+                                                                             <span class="text-grey">31-12-2021</span>
+                                                                      </h6>
+                                                               </div>
+                                                        </div>
+                                                        <div class="card" style="margin: 5px">
+                                                               <div class="card-top">
+                                                                      <h6 style="margin: 10px">
+                                                                             <span class="text-danger mr-1">Matematika</span>
+                                                                             <span class="text-grey">Senin</span>
+                                                                             <span class="text-grey">31-12-2021</span>
+                                                                      </h6>
+                                                               </div>
+                                                        </div>
                                                  </div>
                                           </div>
                                    </div>
@@ -203,7 +240,7 @@
                      </a>
                     </div>
                     <br>
-                    <div class="col-sm" style="margin-top: 200px">
+                    <div class="col-sm" style="margin-top: 300px">
                      <form method="POST" action="{{ route('logout') }}">
                             @csrf
                             <a href="{{ route('logout') }}"
