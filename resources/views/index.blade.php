@@ -197,154 +197,154 @@
             </div>
         </form>
                     
-<div class="body-inner">
+    <div class="body-inner">
 
-<header id="header" data-fullwidth="true" data-transparent="true" class="">
-<div class="header-inner">
-<div class="container">
+    <header id="header" data-fullwidth="true" data-transparent="true" class="">
+    <div class="header-inner">
+    <div class="container">
 
-<div id="logo">
-<a href="/">
-<span class="logo-default"><img src="{{asset('plugins/Logo.png')}}" style="width:85px"></span>
-<span class="logo-dark"><img src="{{asset('plugins/Logo.png')}}" style="width:85px"></span>
-</a>
-</div>
+    <div id="logo">
+    <a href="/">
+    <span class="logo-default"><img src="{{asset('plugins/Logo.png')}}" style="width:85px"></span>
+    <span class="logo-dark"><img src="{{asset('plugins/Logo.png')}}" style="width:85px"></span>
+    </a>
+    </div>
 
-<div class="header-extras">
-<ul>
-<li>
-<div class="p-dropdown">
-<a href="#" style="font-family: Poppins; "> 
-    <?php 
-    if (Auth::check()) {
-     echo Auth::user()->name;
-    }
-    else 
-    {
-        echo "<i class='icon-user'></i> Account";
-    }
-    ?>
-    <i class="icon-chevron-down"> </i></a>
-    <ul class="p-dropdown-content">
+    <div class="header-extras">
+    <ul>
+    <li>
+    <div class="p-dropdown">
+    <a href="#" style="font-family: Poppins; "> 
         <?php 
-            if (Auth::check()) {
-      
-       ?>
-        <li><a href="">Dashboard</a></li>
-       <li>
-            <form method="POST" action="{{ route('logout') }}">   <!-- ini kalau mau buat menu logout !-->
-                @csrf
-                <a href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                        this.closest('form').submit();">
-                        LOGOUT
-                </a>
-            </form>
-    </li>
-    <?php 
+        if (Auth::check()) {
+        echo Auth::user()->name;
         }
-    else {
-    ?>
-    <li><a href="{{ route('login') }}">MASUK</a></li>
-    <li><a href="{{ route('register') }}">DAFTAR</a></li>
-    <?php } ?>
-         
-     
-</ul>
-</div>
-</li>
-</ul>
-</div>
-
-
-<div id="mainMenu-trigger">
-<a class="lines-button x"><span class="lines"></span></a>
-</div>
-
-
-<div id="mainMenu">
-<div class="container" >
-<nav  >
-    <ul >
+        else 
+        {
+            echo "<i class='icon-user'></i> Account";
+        }
+        ?>
+        <i class="icon-chevron-down"> </i></a>
+        <ul class="p-dropdown-content">
+            <?php 
+                if (Auth::check()) {
         
-       
-        <li class="dropdown mega-menu-item"><a href="#">Produk</a>
-            <ul class="dropdown-menu">
-                <li class="mega-menu-content">
-                    <div class="row">
+        ?>
+            <li><a href="">Dashboard</a></li>
+        <li>
+                <form method="POST" action="{{ route('logout') }}">   <!-- ini kalau mau buat menu logout !-->
+                    @csrf
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                            this.closest('form').submit();">
+                            LOGOUT
+                    </a>
+                </form>
+        </li>
+        <?php 
+            }
+        else {
+        ?>
+        <li><a href="{{ route('login') }}">MASUK</a></li>
+        <li><a href="{{ route('register') }}">DAFTAR</a></li>
+        <?php } ?>
+            
+        
+    </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+
+
+    <div id="mainMenu-trigger">
+    <a class="lines-button x"><span class="lines"></span></a>
+    </div>
+
+
+    <div id="mainMenu">
+    <div class="container" >
+    <nav  >
+        <ul >
+            
+        
+            <li class="dropdown mega-menu-item"><a href="#">Produk</a>
+                <ul class="dropdown-menu">
+                    <li class="mega-menu-content">
+                        <div class="row">
+                                <div class="col-lg-1 p-l-0">
+                                    </div>
+                            <div class="col-lg-7-5 p-l-0">
+                                <center>
+                                    <h4 style="color:rgb(255, 69, 70)">dSosety <small>siswa nusantara</small></h4>
+                                    <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
+                                    <p class="m-b-0">Sistem Pembelajaran lebih efisien</p>
+                                    <a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
+                                    <p class="text-center m-0"><em>* Limited time Offer</em></p>
+                                    </small>
+                                </center>
+                            </div>
                             <div class="col-lg-1 p-l-0">
                                 </div>
-                        <div class="col-lg-7-5 p-l-0">
-                            <center>
-                                <h4 style="color:rgb(255, 69, 70)">dSosety <small>siswa nusantara</small></h4>
-                                <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
-                                <p class="m-b-0">Sistem Pembelajaran lebih efisien</p>
-                                <a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
-                                <p class="text-center m-0"><em>* Limited time Offer</em></p>
-                                </small>
-                            </center>
-                        </div>
-                        <div class="col-lg-1 p-l-0">
+                            <div class="col-lg-7-5 p-l-0">
+                                    <center>
+                                    <h4 style="color:rgb(255, 69, 70)">Gena-Geni <small>siswa nusantara</small></h4>
+                                    <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
+                                    <p class="m-b-0">Sistem Pembelajaran lebih efisien</p><a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
+                                    <p class="text-center m-0"><em>* Limited time Offer</em></p>
+                                    </small>
+                                    </center>
                             </div>
-                        <div class="col-lg-7-5 p-l-0">
-                                <center>
-                                <h4 style="color:rgb(255, 69, 70)">Gena-Geni <small>siswa nusantara</small></h4>
-                                <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
-                                <p class="m-b-0">Sistem Pembelajaran lebih efisien</p><a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
-                                <p class="text-center m-0"><em>* Limited time Offer</em></p>
-                                </small>
-                                </center>
-                        </div>
-                        <div class="col-lg-1 p-l-0">
-                            </div>
-                        <div class="col-lg-7-5 p-l-0">
-                                <center>
-                                <h4 style="color:rgb(255, 69, 70)">Sekolahku</h4>
-                                <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
-                                <p class="m-b-0">Sistem Pembelajaran lebih efisien</p><a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
-                                <p class="text-center m-0"><em>* Limited time Offer</em></p>
-                                </small>
-                                </center>
-                        </div>
-                        <div class="col-lg-1 p-l-0">
-                            </div>
-                    </div>
-                </li>
-            </ul>
-        </li>
-        <li><a style="font-family: Poppins" style="font-family: Poppins" href="/sekolah">SeCara</a>
-        <li><a style="font-family: Poppins" href="index.html">Tentang Semud</a></li>
-        <li><a style="font-family: Poppins" href="#">Bantuan</a>
-        </li>
-    </ul>
-</nav>
-</div>
-</div>
-
-</div>
-</div>
-</header>
-
-@yield('isi')
-
-<footer id="footer">
-   
-                        <div class="copyright-content">
-                            <div class="container">
-                                <div class="copyright-text text-center">&copy; 2020 SEMUD - SEKOLAH MUDAH.
-                                    All Rights Reserved.</div>
+                            <div class="col-lg-1 p-l-0">
                                 </div>
+                            <div class="col-lg-7-5 p-l-0">
+                                    <center>
+                                    <h4 style="color:rgb(255, 69, 70)">Sekolahku</h4>
+                                    <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
+                                    <p class="m-b-0">Sistem Pembelajaran lebih efisien</p><a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
+                                    <p class="text-center m-0"><em>* Limited time Offer</em></p>
+                                    </small>
+                                    </center>
                             </div>
-</footer>
+                            <div class="col-lg-1 p-l-0">
+                                </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li><a style="font-family: Poppins" style="font-family: Poppins" href="/sekolah">SeCara</a>
+            <li><a style="font-family: Poppins" href="index.html">Tentang Semud</a></li>
+            <li><a style="font-family: Poppins" href="#">Bantuan</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </header>
+
+    @yield('isi')
+
+    <footer id="footer">
+    
+                            <div class="copyright-content">
+                                <div class="container">
+                                    <div class="copyright-text text-center">&copy; 2020 SEMUD - SEKOLAH MUDAH.
+                                        All Rights Reserved.</div>
+                                    </div>
+                                </div>
+    </footer>
 
 
 
-<a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
 
-<script src="{{asset('js/plugins.js')}}"></script>
-<script src="{{asset('js/functions.js')}}"></script>
-<script src="{{asset('js/jquery.js')}}"></script>
-<script src="{{asset('plugins/popper.min.js')}}"></script>
-@yield('script')
+    <script src="{{asset('js/plugins.js')}}"></script>
+    <script src="{{asset('js/functions.js')}}"></script>
+    <script src="{{asset('js/jquery.js')}}"></script>
+    <script src="{{asset('plugins/popper.min.js')}}"></script>
+    @yield('script')
 </body>
 </html>
