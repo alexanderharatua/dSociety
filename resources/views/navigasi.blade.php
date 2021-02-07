@@ -158,14 +158,23 @@
                                                         <div class="card" style="margin: 5px; background:rgb(236, 52, 83);">
                                                                <div class="card-top">
                                                                       <h6 style="margin: 10px">
-                                                                             <span class="text-danger mr-1">Matematika</span>
-                                                                             <span class="text-grey">Senin</span>
-                                                                             <span class="text-grey">31-12-2021</span>
+                                                                             <span class="text-light">Matematika</span>
+                                                                             <span class="text-light">Senin</span>
+                                                                             <span class="text-light">31-12-2021</span>
                                                                       </h6>
                                                                </div>
                                                         </div>
                                                         <!-- Card -->
-                                                        <div class="card" style="margin: 5px">
+                                                        <div class="card" style="margin: 5px; background:rgb(40, 62, 255);">
+                                                               <div class="card-top">
+                                                                      <h6 style="margin: 10px">
+                                                                             <span class="text-light">Matematika</span>
+                                                                             <span class="text-light">Senin</span>
+                                                                             <span class="text-light">31-12-2021</span>
+                                                                      </h6>
+                                                               </div>
+                                                        </div>
+                                                        <div class="card" style="margin: 5px; background:rgb(39, 201, 47);">
                                                                <div class="card-top">
                                                                       <h6 style="margin: 10px">
                                                                              <span class="text-danger mr-1">Matematika</span>
@@ -174,16 +183,7 @@
                                                                       </h6>
                                                                </div>
                                                         </div>
-                                                        <div class="card" style="margin: 5px">
-                                                               <div class="card-top">
-                                                                      <h6 style="margin: 10px">
-                                                                             <span class="text-danger mr-1">Matematika</span>
-                                                                             <span class="text-grey">Senin</span>
-                                                                             <span class="text-grey">31-12-2021</span>
-                                                                      </h6>
-                                                               </div>
-                                                        </div>
-                                                        <div class="card" style="margin: 5px">
+                                                        <div class="card" style="margin: 5px; background:rgb(238, 241, 10);">
                                                                <div class="card-top">
                                                                       <h6 style="margin: 10px">
                                                                              <span class="text-danger mr-1">Matematika</span>
