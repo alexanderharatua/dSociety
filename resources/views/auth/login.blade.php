@@ -3,7 +3,6 @@
         <x-slot name="logo">
             <x-jet-authentication-card-logo />
         </x-slot>
-
    
 
         @if (session('status'))

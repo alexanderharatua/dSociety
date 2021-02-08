@@ -33,6 +33,7 @@
 	body {
 		color: #fff;
 		font-family: 'Poppins', sans-serif;
+		background: linear-gradient(180deg, rgba(38, 166, 157, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
 	}
     .form-control{
 		height: 41px;
@@ -152,6 +153,7 @@
 		padding-bottom: 15px;
 		text-align: center;
     }
+
 </style>
 
     <body>

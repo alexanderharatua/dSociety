@@ -30,10 +30,10 @@
                     <br>
                     <div class="col-sm">
                      <a href="/latihan" class="nav-link">
-                            <p>
-                            <i class="fa fa-address-card" aria-hidden="true"></i>
-                              Latihan
-                            </p>
+                        <p>
+                          <i class="fa fa-address-card" aria-hidden="true"></i>
+                            Latihan
+                          </p>
                      </a>
                     </div>
                     <br>
@@ -87,7 +87,7 @@
                               </div>
                               <div class="card text-center"  style="margin: 5px">
                                 <div class="card-body">
-                                    <div> <a href="#" class="btn btn-danger" style="width:100%">Latihan-2</a></div>
+                                    <div> <a href="#" class="btn btn-danger" style="width:100%">Latihan 2</a></div>
                                   <p class="card-text">
                                         Soal 100 <br> Waktu 120 Menit
                                   </p>
