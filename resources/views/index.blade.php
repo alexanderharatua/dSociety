@@ -230,7 +230,7 @@
                 if (Auth::check()) {
         
         ?>
-            <li><a href="">Dashboard</a></li>
+            <li><a href="/soal">Dashboard</a></li>
         <li>
                 <form method="POST" action="{{ route('logout') }}">   <!-- ini kalau mau buat menu logout !-->
                     @csrf

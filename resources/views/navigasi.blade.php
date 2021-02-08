@@ -20,7 +20,7 @@
                 <div class="sidebar col-lg-3" style="border: 2px;background:white">
                     <br>
                      <div class="col-sm">
-                            <a href="#" class="nav-link">
+                            <a href="/soal" class="nav-link">
                                    <p>
                                    <i class="fa fa-address-book" aria-hidden="true"></i>
                                      Dashboard
@@ -29,7 +29,7 @@
                     </div>
                     <br>
                     <div class="col-sm">
-                     <a href="#" class="nav-link">
+                     <a href="/latihan" class="nav-link">
                             <p>
                             <i class="fa fa-address-card" aria-hidden="true"></i>
                               Latihan

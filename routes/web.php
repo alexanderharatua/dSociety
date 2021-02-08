@@ -28,6 +28,11 @@ Route::get('/home', function () {
 Route::get('/soal', function () {
     return view('navigasi');
 });
+
+Route::get('/latihan', function () {
+    return view('latihannavigasi');
+});
+
 Route::get('/sekolah', function () {
     return view('sekolah');
 });
