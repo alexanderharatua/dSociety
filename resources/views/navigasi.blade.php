@@ -22,7 +22,7 @@
                      <div class="col-sm">
                             <a href="/soal" class="nav-link">
                                    <p>
-                                   <i class="fa fa-address-book" aria-hidden="true"></i>
+                                   <i class="fa fa-address-book" aria-hidden="true" style="color: #FF4546;"></i>
                                      Dashboard
                                    </p>
                             </a>
@@ -38,7 +38,7 @@
                     </div>
                     <br>
                     <div class="col-sm">
-                     <a href="#" class="nav-link">
+                     <a href="/tryout" class="nav-link">
                             <p>
                             <i class="fa fa-star" aria-hidden="true"></i>
                               Try Out

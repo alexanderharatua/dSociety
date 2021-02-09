@@ -31,16 +31,16 @@
                     <div class="col-sm">
                      <a href="/latihan" class="nav-link">
                         <p>
-                          <i class="fa fa-address-card" aria-hidden="true" style="color: #FF4546;"></i>
+                          <i class="fa fa-address-card" aria-hidden="true"></i>
                             Latihan
                           </p>
                      </a>
                     </div>
                     <br>
                     <div class="col-sm">
-                     <a href="/tryout" class="nav-link">
+                     <a href="#" class="nav-link">
                             <p>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color: #FF4546;"></i>
                               Try Out
                             </p>
                      </a>           
