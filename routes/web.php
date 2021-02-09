@@ -33,6 +33,10 @@ Route::get('/latihan', function () {
     return view('latihannavigasi');
 });
 
+Route::get('/tampiltryout', function () {
+    return view('tampiltryout');
+});
+
 Route::get('/tryout', function () {
     return view('tryoutnavigasi');
 });
