@@ -267,7 +267,14 @@
     <nav  >
         <ul >
             
-        
+                <li class="dropdown d-lg-none d-md-block d-block"><span class="dropdown-arrow"></span><a href="#">Panel</a>
+                    <ul class="dropdown-menu" style="">
+                            <li ><a href="#">Dashboard</a></li>
+                            <li ><a href="#">Latihan</a></li>
+                            <li ><a href="#">TryOut</a></li>
+                            <li ><a href="#">Peringkat</a></li>
+                    </ul>
+                </li>
             <li class="dropdown mega-menu-item"><a href="#">Produk</a>
                 <ul class="dropdown-menu">
                     <li class="mega-menu-content">

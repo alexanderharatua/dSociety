@@ -12,12 +12,12 @@
               text-align: center;
        }
        </style>
-<section id="page-content" class="sidebar-left" style="background:rgb(197, 245, 252);">
+<section id="page-content" class="sidebar-left" style="background:linear-gradient(to right, rgba(38, 166, 157, 0.2) 0%, rgba(255, 255, 255, 0) 100%)">
         <div class="">
               <div class="row">
                      <!-- kanan -->
                      
-                <div class="sidebar col-lg-3" style="border: 2px;background:white">
+                <div class="sidebar col-lg-3 d-lg-block d-none " style="border: 2px;background:white">
                     <br>
                      <div class="col-sm">
                             <a href="/soal" class="nav-link">
@@ -54,20 +54,7 @@
                             </p>
                      </a>
                     </div>
-                    <br>
-                    <div class="col-sm" style="margin-top: 300px">
-                     <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                this.closest('form').submit();">
-                                <p>
-                                   <i class="nav-icon fas fa-sign-out-alt" aria-hidden="true"></i>
-                                     Logout
-                            </p>
-                        </a>
-                     </form>
-                    </div>
+                    
         </div>
 
         <!-- tengah -->
@@ -99,7 +86,7 @@
                                         Lacus morbi risus velit vel arcu ac malesuada quam. Arcu at viverra lorem vestibulum, lobortis magna et diam. 
                                         Risus ornare cras lacinia tempor.
                                  </p>
-                                 <button type="button" class="btn btn-danger">Baca selengkapnya</button>
+                                 <button type="button" style="background:rgba(255,69,70,0.800000011920929); border:none" class="btn btn-danger">Baca selengkapnya</button>
                                 </div>   
                         <div class="d-none d-xl-block" style="width:550px;background-color: white;opacity: 1;
                            position: absolute;
@@ -125,7 +112,7 @@
                                    Lacus morbi risus velit vel arcu ac malesuada quam. Arcu at viverra lorem vestibulum, lobortis magna et diam. 
                                    Risus ornare cras lacinia tempor.
                             </p>
-                            <button type="button" class="btn btn-danger">Baca selengkapnya</button>
+                            <button type="button" style="background:rgba(255,69,70,0.800000011920929); border:none" class="btn btn-danger">Baca selengkapnya</button>
                            </div>
                            <div  style="
                           
@@ -144,46 +131,50 @@
                             <p style="margin-bottom: 2px">Aktivitas</p>
                             <div class="content col-lg-12" style="background:rgb(255, 255, 255); padding:15px">
                                   <div class="row" style="padding-left:10px">
-                                          <div class="col-lg-3">
+                                          <div class="col-lg-3 col-6">
                                                  <div class="row">
-                                                        <div class="col-md-4" style="border:2px solid rgba(255,69,70,0.800000011920929);">
-                                                               <center><img src="{{asset('plugins/icon-people.png')}}" style="width:100%;padding-top:50%"></center>
+                                                        <div class="col-md-4 col-sm-4" style="border:2px solid rgba(255,69,70,0.800000011920929);">
+                                                               <center><img class="d-md-block d-none" src="{{asset('plugins/icon-people.png')}}" style="width:100%;padding-top:50%"></center>
+                                                               <center><img class="d-md-none d-block" src="{{asset('plugins/icon-people.png')}}" style="width:100%;padding-top:0%"></center>
                                                         </div>
-                                                        <div class="col-md-8">
+                                                        <div class="col-md-8 col-sm-8">
                                                                <h5 style="color:rgba(255,69,70,0.800000011920929);">Kehadiran</h5>
                                                                 18
                                                         </div>
                                                  </div>
                                                  
                                          </div>
-                                         <div class="col-lg-3">
+                                         <div class="col-lg-3 col-6">
                                           <div class="row">
-                                                 <div class="col-md-4"  style="border:2px solid rgba(25,118,210,1);">
-                                                        <img src="{{asset('plugins/icon-note.png')}}" style="width:100%;padding-top:50%">
+                                                 <div class="col-md-4 col-sm-4 "  style="border:2px solid rgba(25,118,210,1);">
+                                                        <img class="d-md-block d-none" src="{{asset('plugins/icon-note.png')}}" style="width:100%;padding-top:50%">
+                                                        <img class="d-md-none d-block" src="{{asset('plugins/icon-note.png')}}" style="width:100%;padding-top:0%">
                                                  </div>
-                                                 <div class="col-md-8">
+                                                 <div class="col-md-8 col-sm-8">
                                                         <h5 style="color:rgba(25,118,210,1)"> Latihan</h5>
                                                         3
                                                  </div>
                                           </div>        
                                          </div>
-                                         <div class="col-lg-3">
+                                         <div class="col-lg-3 col-6">
                                                  <div class="row">
-                                                        <div class="col-md-4"  style="border:2px solid rgba(76,175,80,0.800000011920929);">
-                                                               <img src="{{asset('plugins/icon-book.png')}}" style="width:100%;padding-top:50%">
+                                                        <div class="col-md-4 col-sm-4 "  style="border:2px solid rgba(76,175,80,0.800000011920929);">
+                                                               <img class="d-md-block d-none" src="{{asset('plugins/icon-book.png')}}" style="width:100%;padding-top:50%">
+                                                               <img class="d-md-none d-block" src="{{asset('plugins/icon-book.png')}}" style="width:100%;padding-top:0%">
                                                         </div>
-                                                        <div class="col-md-8">
+                                                        <div class="col-md-8 col-sm-8">
                                                                <h5 style="color:rgba(76,175,80,0.800000011920929)"> Try Out</h5>
                                                                2
                                                         </div>
                                                  </div>               
                                          </div>
-                                         <div class="col-lg-3">
+                                         <div class="col-lg-3 col-6">
                                                  <div class="row">
-                                                        <div class="col-md-4"  style="border:2px solid rgba(255,191,0,1)">
-                                                               <img src="{{asset('plugins/icon-circle.png')}}"  style="width:100%;padding-top:50%">
+                                                        <div class="col-md-4 col-sm-4 "  style="border:2px solid rgba(255,191,0,1);padding-bottom:15px">
+                                                               <img class="d-md-block d-none" src="{{asset('plugins/icon-circle.png')}}"  style="width:100%;padding-top:50%">
+                                                               <img class="d-md-none d-block" src="{{asset('plugins/icon-circle.png')}}"  style="width:100%;padding-top:0%">
                                                         </div>
-                                                        <div class="col-md-8 ">
+                                                        <div class="col-md-8 col-sm-8 ">
                                                                <h5 style="color: rgba(255,191,0,1)"> Peringkat</h5>
                                                                1
                                                         </div>
@@ -267,16 +258,16 @@
                      <div class="col-lg-6"  style="background:white; overflow-x: hidden;
                      overflow-y: scroll;height:300px;">
                                         <br>
-                                        <button type="button" class="btn btn-danger" style="width:100%">
+                                        <button type="button" class="btn"  style="background:rgba(255,69,70,0.800000011920929);width:95%">
                                         Matematika <span class="badge badge-light">Senin/31-12-2021</span>
                                         </button>
-                                        <button type="button" class="btn btn-danger" style="width:95%">
+                                        <button type="button" class="btn" style="background:rgba(255,69,70,0.800000011920929);width:95%" >
                                             Matematika <span class="badge badge-light">Senin/31-12-2021</span>
                                         </button>
-                                        <button type="button" class="btn btn-danger" style="width:95%">
+                                        <button type="button" class="btn" style="background:rgba(255,69,70,0.800000011920929);width:95%" >
                                             Matematika <span class="badge badge-light">Senin/31-12-2021</span>
                                         </button>
-                                        <button type="button" class="btn btn-danger" style="width:95%">
+                                        <button type="button" class="btn" style="background:rgba(255,69,70,0.800000011920929);width:95%" >
                                             Matematika <span class="badge badge-light">Senin/31-12-2021</span>
                                         </button>
                     </div>
@@ -285,7 +276,7 @@
        </div>
         
         <!-- kiri -->
-        <div class="sidebar col-lg-3" style="border: 2px; ">
+        <div class="sidebar col-lg-3  d-lg-block d-none" style="border: 2px; ">
                 <div style="width: 324px;
                 height: 383px;
                 background: rgba(75,75,75,1);"></div>
