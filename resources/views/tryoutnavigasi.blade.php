@@ -17,10 +17,10 @@
               <div class="row">
                      <!-- kanan -->
                      
-                <div class="sidebar col-lg-3" style="border: 2px;background:white">
+                <div class="sidebar col-lg-3 d-lg-block d-none" style="border: 2px;background:white">
                     <br>
                      <div class="col-sm">
-                            <a href="/soal" class="nav-link">
+                            <a href="/dashboard" class="nav-link">
                                    <p>
                                    <i class="fa fa-address-book" aria-hidden="true"></i>
                                      Dashboard
@@ -187,9 +187,9 @@
                     </div>
                     
                 </div>   
-                <div style="padding-left:22%">
+                <div>
                   <br>
-                    <ul class="pagination pagination-lg">
+                    <ul class="pagination pagination-lg justify-content-center">
                         <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
@@ -202,7 +202,7 @@
        </div>
         
         <!-- kiri -->
-        <div class="sidebar col-lg-3" style="border: 2px; ">
+        <div class="sidebar col-lg-3 d-lg-block d-none" style="border: 2px; ">
                 <div style="width: 324px;
                 height: 383px;
                 background: rgba(75,75,75,1);"></div>

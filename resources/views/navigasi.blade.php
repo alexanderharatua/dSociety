@@ -20,7 +20,7 @@
                 <div class="sidebar col-lg-3 d-lg-block d-none " style="border: 2px;background:white">
                     <br>
                      <div class="col-sm">
-                            <a href="/soal" class="nav-link">
+                            <a href="/dashboard" class="nav-link">
                                    <p>
                                    <i class="fa fa-address-book" aria-hidden="true" style="color: #FF4546;"></i>
                                      Dashboard

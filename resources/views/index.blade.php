@@ -230,7 +230,7 @@
                 if (Auth::check()) {
         
         ?>
-            <li><a href="/soal">Dashboard</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
         <li>
                 <form method="POST" action="{{ route('logout') }}">   <!-- ini kalau mau buat menu logout !-->
                     @csrf
@@ -269,9 +269,9 @@
             
                 <li class="dropdown d-lg-none d-md-block d-block"><span class="dropdown-arrow"></span><a href="#">Panel</a>
                     <ul class="dropdown-menu" style="">
-                            <li ><a href="#">Dashboard</a></li>
-                            <li ><a href="#">Latihan</a></li>
-                            <li ><a href="#">TryOut</a></li>
+                            <li ><a href="/dashboard">Dashboard</a></li>
+                            <li ><a href="/latihan">Latihan</a></li>
+                            <li ><a href="/tryout">TryOut</a></li>
                             <li ><a href="#">Peringkat</a></li>
                     </ul>
                 </li>
