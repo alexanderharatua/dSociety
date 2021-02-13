@@ -23,7 +23,8 @@
                                  data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;border-width:0px;">
                                     <div style="width: 456px;
                                     height: 507px;
-                                    background: rgba(109,109,109,1);
+                                    background-image:url('plugins/pic1.png'); 
+                                    background-size:cover;
                                     opacity: 1;
                                     position: absolute;
                                     border-top-left-radius: 5px;
@@ -119,8 +120,8 @@
                         data-textAlign="['center','left','left','left']" data-paddingtop="[145,0,0,0]" data-paddingright="[0,0,0,0]" 
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;border-width:0px;     width: 383px;
                         height: 290px;
-                        background: rgba(196,196,196,1);
-                        opacity: 1;
+                        background-image:url('plugins/pic2.png'); 
+                        background-size:contain;
                         position: absolute;
                         border-top-left-radius: 5px;
                         border-top-right-radius: 5px;
@@ -128,7 +129,7 @@
                         border-bottom-right-radius: 5px;
                         overflow: hidden;
                     ">
-                            <h1>UTBK INTENSIF</h1>
+                           
                             
                         </div>
                         <div class="tp-caption   tp-resizeme" id="slide-3127-layer-22" 
@@ -140,7 +141,8 @@
                         data-textAlign="['CENTER','left','left','left']" data-paddingtop="[145,0,0,0]" data-paddingright="[0,0,0,0]" 
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;border-width:0px;     width: 383px;
                         height: 290px;
-                        background: rgba(196,196,196,1);
+                        background-image:url('plugins/pic3.png'); 
+                        background-size:contain;
                         opacity: 1;
                         position: absolute;
                         top: 0px;
@@ -151,7 +153,6 @@
                         border-bottom-right-radius: 5px;
                         overflow: hidden;
                     ">
-                        <h1>REGULAR</h1>
                         </div>
                     
                     <div class="tp-caption     tp-resizeme " id="slide-3127-layer-3" 
@@ -164,6 +165,7 @@
                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,150]" 
                     style="font-family: Poppins;z-index: 7; min-width: 500px; max-width: 500px; white-space: normal; 
                   ">
+                  <h6>REGULAR</h6>
                     <font style="font-size: 19px !important">
                         Kelas Reguler adalah Program untuk para siswa kelas 10 dan 11 SMA/MAN yang ingin mendalami pelajaran untuk meningkatkan nilai di sekolah <br>
                        <br>
@@ -186,6 +188,7 @@
                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,150]" 
                     style="font-family: Poppins;z-index: 7; min-width: 500px; max-width: 500px; white-space: normal; 
                   ">
+                   <h6>UTBK INTENSIF</h6>
                     <font style="font-size: 19px !important">
                         UTBK Intensif adalah Program untuk alumni dan kelas 12 SMA/Sederajat yang akan melakukan persiapan ujian UTBK secara intensif setiap hari. <br>
                         <br>
@@ -227,13 +230,17 @@
                         
                         <div style="width: 452px;
                         height: 224px;
-                        background: rgba(69,90,100,1);
+                        background: rgba(25,118,210,1);
                         opacity: 1;
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
                         border-bottom-right-radius: 10px;
                         overflow: hidden;">
+                        <p class="text-center" style="font-family: Poppins; font-size:36px; color:rgb(255, 255, 255)">
+                        <b>Staf Pengajar dari Universitas Ternama</b></p>
+                        <p class="text-center" style="font-family: Poppins; padding:10px; font-size:20px; color:rgb(255, 255, 255)">
+                            Merupakan lulusan universitas ternama dan sudah memiliki jam terbang yang banyak di dunia pengajaran.</p>          
                     </div>
                     </div>
                         
@@ -248,13 +255,17 @@
                         
                         <div style="width: 452px;
                         height: 224px;
-                        background: rgba(69,90,100,1);
+                        background: rgb(255,69,70,1);
                         opacity: 1;
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
                         border-bottom-right-radius: 10px;
                         overflow: hidden;">
+                        <p class="text-center" style="font-family: Poppins; font-size:46px; color:rgb(255, 255, 255)">
+                        <b> Private Online</b></p>
+                        <p class="text-center" style="font-family: Poppins; padding:10px; font-size:22px; color:rgb(255, 255, 255)">
+                            Pembelajaran online secara live akan membuat kamu lebih mudah dan hemat uang.</p>
                     </div>
                     </div>
                     <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
@@ -268,13 +279,17 @@
                         
                         <div style="width: 452px;
                         height: 224px;
-                        background: rgba(69,90,100,1);
+                        background: rgb(76,175,80,1);
                         opacity: 1;
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
                         border-bottom-right-radius: 10px;
-                        overflow: hidden;"></div>
+                        overflow: hidden;"><p class="text-center" style="font-family: Poppins; font-size:46px; color:rgb(255, 255, 255)">
+                        <b> Modul Belajar</b></p>
+                        <p class="text-center" style="font-family: Poppins; padding:10px; font-size:22px; color:rgb(255, 255, 255)">
+                            Rangkuman yang sudah disusun se-efektif dan efisien mungkin guna memudahkan siswa-siswa mengerti dan mengingat.</p>
+                    </div>
                     </div>
                     <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
                         data-x="['center','center','center','center']" data-hoffset="['290','-10000','-10000','10000']" data-y="['top','top','top','top']" 
@@ -287,16 +302,20 @@
                         
                         <div style="width: 452px;
                         height: 224px;
-                        background: rgba(69,90,100,1);
+                        background: rgb(255,191,0,1);
                         opacity: 1;
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
                         border-bottom-left-radius: 10px;
                         border-bottom-right-radius: 10px;
-                        overflow: hidden;"></div>
-                    </div>
+                        text-align:center;
+                        overflow: hidden;"> <p class="text-center" style="font-family: Poppins; font-size:46px; color:rgb(255, 255, 255)">
+                        <b> Tryout Ujian</b></p>
+                        <p class="text-center" style="font-family: Poppins; padding:10px; font-size:22px; color:rgb(255, 255, 255)">
+                            Bank soal yang banyak dan akurat tentunya membantu kamu untuk lulus di kampus terbaik.</p> 
+                    </div> 
 
-                    <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
+                    {{-- <div class="tp-caption FullSiteBlock-Title   tp-resizeme" id="slide-3127-layer-3"
                         data-x="['center','center','center','left']" data-hoffset="['320','-320','-100','250']" data-y="['top','top','top','top']" 
                         data-voffset="['100','200','10','0']" data-fontsize="['45','45','25','20']" data-lineheight="['55','55','25','20']" 
                         data-width="['500','500','350','200']" data-height="none" data-whitespace="normal" data-type="text" 
@@ -305,14 +324,14 @@
                         data-textAlign="['center','left','left','right']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" 
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" 
                         style="font-family: Poppins;z-index: 7; min-width: 500px; color:black;max-width: 500px; white-space: normal; font-size: 45px; line-height: 55px;">
-                        <font style="colot:black">
+                        <font style="color:black">
                         Try Out Ujian <br>
                         <span style="font-size: 18px">
                                 Bank soal yang banyak dan akurat tentunya membantu kamu untuk lulus di kampus terbaik. 
                         </span>
                         </font>
-                    </div>
-                    <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
+                    </div> --}}
+                    {{-- <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
                         data-x="['center','center','center','left']" data-hoffset="['-300','-320','-100','50']" data-y="['top','top','top','top']" 
                         data-voffset="['100','500','200','150']" data-fontsize="['45','45','25','20']" data-lineheight="['55','55','25','20']" 
                         data-width="['500','500','350','200']" data-height="none" data-whitespace="normal" data-type="text" 
@@ -320,14 +339,14 @@
                         data-frames='[{"from":"y:50px;opacity:0;","speed":2500,"to":"o:1;","delay":250,"ease":"Power4.easeOut"},{"delay":"wait","speed":500,"to":"y:10px;opacity:0;","ease":"Power4.easeOut"}]' 
                         data-textAlign="['center','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" 
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" 
-                        style="font-family: Poppins;z-index: 7; min-width: 500px; color:black;max-width: 500px; white-space: normal; font-size: 45px; line-height: 55px;">
+                        style="font-family: Poppins;z-index: 7; min-width: 500px; color:black;max-width: 500px; white-space: normal; font-size: 45px; line-height: 55px;  text-align: center;">
                         
-                        Private Online <br>
+                       <h6>Private Online</h6>
                         <span style="font-size: 18px">
                                 Pembelajaran online secara live akan membuat kamu lebih mudah dan hemat uang.  
                         </span>
-                    </div>
-                    <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
+                    </div> --}}
+                    {{-- <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
                         data-x="['center','center','center','left']" data-hoffset="['-300','320','-100','250']" data-y="['top','top','top','top']" 
                         data-voffset="['420','200','400','300']" data-fontsize="['45','45','25','20']" data-lineheight="['55','55','25','20']" 
                         data-width="['500','500','350','200']" data-height="none" data-whitespace="normal" data-type="text" 
@@ -335,14 +354,14 @@
                         data-frames='[{"from":"y:50px;opacity:0;","speed":2500,"to":"o:1;","delay":250,"ease":"Power4.easeOut"},{"delay":"wait","speed":500,"to":"y:10px;opacity:0;","ease":"Power4.easeOut"}]' 
                         data-textAlign="['center','left','left','right']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" 
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" 
-                        style="font-family: Poppins;z-index: 7; min-width: 500px; color:blcak;max-width: 500px; white-space: normal; font-size: 45px; line-height: 55px;">
+                        style="font-family: Poppins;z-index: 7; min-width: 500px; color:black; max-width: 500px; white-space: normal; font-size: 45px; line-height: 55px;">
                         
                         Modul Belajar <br>
                         <span style="font-size: 18px">
                                 Rangkuman yang sudah disusun se-efektif dan efisien mungkin guna memudahkan siswa-siswa mengerti dan mengingat.  
                         </span>
-                    </div>
-                    <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
+                    </div> --}}
+                    {{-- <div class="tp-caption FullSiteBlock-Title   tp-resizeme " id="slide-3127-layer-3" 
                         data-x="['center','center','center','left']" data-hoffset="['320','320','-100','50']" data-y="['top','top','top','top']" 
                         data-voffset="['420','500','600','500']" data-fontsize="['45','45','25','20']" data-lineheight="['40','55','25','20']" 
                         data-width="['500','500','350','200']" data-height="none" data-whitespace="normal" data-type="text" 
@@ -353,18 +372,39 @@
                         style="font-family: Poppins;z-index: 7; min-width: 500px; color:black;max-width: 500px; white-space: normal; font-size: 45px; line-height: 55px;">
                         
                         Staf Pengajar dari Universitas Ternama <br>
-                        <span style="font-size: 18px">
-                                Merupakan lulusan universitas ternama dan sudah memiliki jam terbang yang banyak di dunia pengajaran.  
-                        </span>
-                    </div>
+                        <p style="text-align: left">Merupakan lulusan universitas ternama dan sudah memiliki jam terbang yang banyak di dunia pengajaran.</p>
+                    </div> --}}
                     </li>
                         
                 </ul>
         
         </div>
     </div>
+    <div id="about_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="fullsite-block-2-about159" data-source="gallery" 
+        style="background-color:#FF4546;padding:0px;">
+        <div id="next" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="text-center" style="font-family: Poppins; padding:30px; font-size:46px; color:rgb(255, 255, 255)">
+                       <b>Our Story begins Here Let's Build the Future</b></p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="{{asset('plugins/logoputih.png')}}" style="width: 434px;
+                    height: 138px; margin-top:40px;" alt="">
+                </div>
+            </div>
+          </div>
+    </div>
    
-    
+    <div id="about_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="fullsite-block-2-about159" data-source="gallery" 
+        style="background-color:#FDCD07;">
+        <div id="next" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
+        </div>
+        <p class="text-center" style="font-family: Poppins; padding:60px; font-size:25px; color:rgb(0, 0, 0)">
+            <b>Sekolah Mudah merupakan sebuah inovasi pendidikan yang berfokus pada Efektivitas dan Efisiensi dalam perkembangan pendidikan siswa. Sekolah Mudah sendiri sudah beroperasi sejak 17 September 2019.</b></p>
+    </div>
        
     </section>
     
