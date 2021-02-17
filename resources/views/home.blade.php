@@ -23,13 +23,14 @@
                                  data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;border-width:0px;">
                                     <div style="width: 456px;
                                     height: 507px;
-                                    background: rgba(109,109,109,1);
+                                    background-image: url('{{asset('plugins/atas.png')}}');
                                     opacity: 1;
                                     position: absolute;
                                     border-top-left-radius: 5px;
-                                    border-top-right-radius: 5px;
+                                    border-top-right-rkmadius: 5px;
                                     border-bottom-left-radius: 5px;
                                     border-bottom-right-radius: 5px;
+                                    border-radius:25px;
                                     overflow: hidden;"></div>
                                 </div>
                                 <div class="tp-caption FullSiteBlock-Title   tp-resizeme" id="slide-3130-layer-3" 
@@ -59,8 +60,11 @@
                                     <b>Temukan Teman, Cara Belajar, dan Mimpimu disini </b>
                                 </span>
                                 </div>
+                                <?php 
+                                        if (Auth::check()) {
                                 
-                                <a data-target="#modal-3" data-toggle="modal" href="#" class="tp-caption FullSiteBlock-Link   tp-resizeme  tp-rs-menulink" href="#about" target="_self" 
+                                ?>
+                                 <a href="soal" class="tp-caption FullSiteBlock-Link   tp-resizeme  tp-rs-menulink" href="#about" target="_self" 
                                 id="slide-3130-layer-5" data-x="['left','left','left','left']"
                                 data-hoffset="['50','150','150','20']" data-y="['top','top','top','top']"
                                 data-voffset="['590','445','411','400']" data-fontsize="['20','20','17','15']"
@@ -74,9 +78,35 @@
                                 <div  style="float:left;padding:20px; border-top-left-radius: 15px;
                                 border-top-right-radius: 15px;
                                 border-bottom-left-radius: 15px;
-                                border-bottom-right-radius: 15px; background: black; border:none; color:white;font-family: Poppins;">Daftar Sekarang</div>
+                                border-bottom-right-radius: 15px; background: black; border:none; color:white;font-family: Poppins;">Dashboard</div>
                                 </a>
-
+                                <?php } ?>
+                                <?php 
+                                        if (!Auth::check()) {
+                                
+                                ?>
+                                <a data-target="#modal-3" data-toggle="modal" href="#" class="tp-caption FullSiteBlock-Link   tp-resizeme  tp-rs-menulink" href="#about" target="_self" 
+                                id="slide-3130-layer-5" data-x="['left','left','left','left']"
+                                data-hoffset="['50','150','150','20']" data-y="['top','top','top','top']"
+                                data-voffset="['590','445','411','400']" data-fontsize="['20','20','17','15']"
+                                data-lineheight="['24','24','26','26']" data-width="['170','130','115','110']" 
+                                data-height="none" data-whitespace="['nowrap','normal','normal','normal']" data-type="text" data-actions='' 
+                                data-responsive_offset="on" 
+                                data-frames='[{"from":"y:10px;opacity:0;","speed":1500,"to":"o:1;","delay":750,"ease":"Power4.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(51, 51, 51, 1.00);"}]' 
+                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" 
+                                data-paddingleft="[0,0,0,0]" style="z-index: 13; min-width: 130px; max-width: 130px; white-space: nowrap; font-size: 20px;cursor:pointer;">
+                               
+                               
+                                <div  style="float:left;padding:20px; border-top-left-radius: 15px;
+                                border-top-right-radius: 15px;
+                                border-bottom-left-radius: 15px;
+                                border-bottom-right-radius: 15px; background: black; border:none; color:white;font-family: Poppins;">Daftar Sekarang</div>
+                                <?php } ?>
+                                </a>
+                                <?php 
+                                        if (!(Auth::check())) {
+                                
+                                ?>
                                 <a data-target="#login" data-toggle="modal" href="#" class="tp-caption FullSiteBlock-Link   tp-resizeme  tp-rs-menulink " href="#about" target="_self" 
                                 id="slide-3130-layer-5" data-x="['left','left','left','left']"
                                 data-hoffset="['270','0','30','20']" data-y="['top','top','top','top']"
@@ -94,6 +124,7 @@
                                 border-bottom-right-radius: 15px; border-style: solid;
                                 border-color: black; color:black;font-family: Poppins;">Masuk</div>
                                 </a>
+                                 <?php } ?>
                         </li>
                 </ul>
             </div>
@@ -119,7 +150,7 @@
                         data-textAlign="['center','left','left','left']" data-paddingtop="[145,0,0,0]" data-paddingright="[0,0,0,0]" 
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;border-width:0px;     width: 383px;
                         height: 290px;
-                        background: rgba(196,196,196,1);
+                        background: url('{{asset('plugins/img/sekolah1.jpeg')}}');
                         opacity: 1;
                         position: absolute;
                         border-top-left-radius: 5px;
@@ -140,7 +171,7 @@
                         data-textAlign="['CENTER','left','left','left']" data-paddingtop="[145,0,0,0]" data-paddingright="[0,0,0,0]" 
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;border-width:0px;     width: 383px;
                         height: 290px;
-                        background: rgba(196,196,196,1);
+                        background: url('{{asset('plugins/img/sekolah2.jpeg')}}');
                         opacity: 1;
                         position: absolute;
                         top: 0px;
@@ -227,7 +258,7 @@
                         
                         <div style="width: 452px;
                         height: 224px;
-                        background: rgba(69,90,100,1);
+                        background: rgba(25,118,210,1);
                         opacity: 1;
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
@@ -248,7 +279,7 @@
                         
                         <div style="width: 452px;
                         height: 224px;
-                        background: rgba(69,90,100,1);
+                        background: rgba(255,69,70,1);
                         opacity: 1;
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
@@ -268,7 +299,7 @@
                         
                         <div style="width: 452px;
                         height: 224px;
-                        background: rgba(69,90,100,1);
+                        background: rgba(76,175,80,1);
                         opacity: 1;
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
@@ -287,7 +318,7 @@
                         
                         <div style="width: 452px;
                         height: 224px;
-                        background: rgba(69,90,100,1);
+                        background: rgba(255,191,0,1);
                         opacity: 1;
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
@@ -362,10 +393,48 @@
                 </ul>
         
         </div>
+        
     </div>
    
-    
+    <div class="d-md-block d-none" style="width: 100%;
+        height: 370px;
+        background: rgba(255,69,70,1);
+        opacity: 1;
+        top: 0px;
+        left: 0px;
+        overflow: hidden
+        padding-top:40%">
        
+        <div  style="width: 700px;
+        line-height:40px;
+        color: rgba(255,255,255,1);
+        font-family: Poppins;
+        font-size: 46px;
+        padding-top:10%;
+        opacity: 1;
+        text-align: left;">Our Story begins Here
+        Let's Build the Future</div>
+        
+    </div>
+       <div style="width: 100%;
+        height: 370px;
+        background: rgba(255,191,0,1);
+        opacity: 1;
+        top: 0px;
+        left: 0px;
+        overflow: hidden
+        padding-top:40%">
+       
+        <div style="width: 100%;
+        line-height:43px;
+        color: rgba(255,255,255,1);
+        font-family: Poppins;
+        font-size: 200%;
+        padding-top:8%;
+        opacity: 1;
+        text-align: center;
+        color:black">Sekolah Mudah merupakan sebuah inovasi pendidikan yang berfokus pada Efektivitas dan Efisiensi dalam perkembangan pendidikan siswa. Sekolah Mudah sendiri sudah beroperasi sejak 17 September 2019. </div>
+    </div>
     </section>
     
 <script type="text/javascript">

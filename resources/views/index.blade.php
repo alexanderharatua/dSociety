@@ -72,6 +72,14 @@
     </script>
 </head>
 <body>
+                
+        <div id="modalStripInfo" class="modal-strip modal-top" style="background:rgba(255,69,70,0.800000011920929)">
+            <div class="container">
+                <div class="text-center">Fitur ini sedang dalam pengembangan, ikuti terus perkembangan dSociety!
+                    <a href="https://www.instagram.com/dsocietyofficial/?hl=en" class="m-l-10 btn btn-light">More info</a>
+                </div>
+            </div>
+        </div>
 
 
         <div class="modal fade" id="login" tabindex="4" role="modal" aria-labelledby="modal-label-2" aria-hidden="true">
@@ -113,21 +121,17 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                          <a href="{{ route('social.auth', 'facebook') }}">
-                                <button type="button" class="btn btn-outline btn-dark btn-rounded" style="width:100%;border-color: black !important;"><i class="fab fa-facebook-f"></i> 
+                          
+                                <a href="{{ route('social.auth', 'facebook') }}" button type="button" class="btn btn-outline btn-dark btn-rounded" style="width:100%;border-color: black !important;"><i class="fab fa-facebook-f"></i> 
                                         <span style="padding-left:5%">
                                             Lanjutkan dengan Facebook
                                         </span>
-                                </button>
-                        </a>
-
-                        <a href="{{ route('social.auth', 'google') }}">          
-                                <button type="button" class="btn btn-outline btn-dark btn-rounded" style="width:100%;border-color: black !important;"><i class="fab fa-google-plus-g"></i>
+                                </a>
+                                 <a href="{{ route('social.auth', 'google') }}" type="button" class="btn btn-outline btn-dark btn-rounded" style="width:100%;border-color: black !important;"><i class="fab fa-google-plus-g"></i>
                                         <span style="padding-left:5%">
                                                 Lanjutkan dengan Google
                                         </span>    
-                                </button>
-                            </a>        
+                                </a>
                         </div>
                     </div>      
                 </div>
@@ -230,7 +234,7 @@
                 if (Auth::check()) {
         
         ?>
-            <li><a href="/soal">Dashboard</a></li>
+            <li><a href="soal">Dashboard</a></li>
         <li>
                 <form method="POST" action="{{ route('logout') }}">   <!-- ini kalau mau buat menu logout !-->
                     @csrf
@@ -266,15 +270,18 @@
     <div class="container" >
     <nav  >
         <ul >
-            
+                 <?php 
+                if (Auth::check()) { ?>
                 <li class="dropdown d-lg-none d-md-block d-block"><span class="dropdown-arrow"></span><a href="#">Panel</a>
                     <ul class="dropdown-menu" style="">
-                            <li ><a href="#">Dashboard</a></li>
+                            <li ><a href="soal">Dashboard</a></li>
                             <li ><a href="#">Latihan</a></li>
                             <li ><a href="#">TryOut</a></li>
                             <li ><a href="#">Peringkat</a></li>
                     </ul>
                 </li>
+                
+                <?php } ?>
             <li class="dropdown mega-menu-item"><a href="#">Produk</a>
                 <ul class="dropdown-menu">
                     <li class="mega-menu-content">
@@ -284,10 +291,9 @@
                             <div class="col-lg-7-5 p-l-0">
                                 <center>
                                     <h4 style="color:rgb(255, 69, 70)">dSosety <small>siswa nusantara</small></h4>
-                                    <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
+                                    <img src="{{asset('plugins/img/dsociety.jpeg')}}" style="width:200px;border-radius:20px">
                                     <p class="m-b-0">Sistem Pembelajaran lebih efisien</p>
                                     <a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
-                                    <p class="text-center m-0"><em>* Limited time Offer</em></p>
                                     </small>
                                 </center>
                             </div>
@@ -296,7 +302,7 @@
                             <div class="col-lg-7-5 p-l-0">
                                     <center>
                                     <h4 style="color:rgb(255, 69, 70)">Gena-Geni <small>siswa nusantara</small></h4>
-                                    <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
+                                     <img src="{{asset('plugins/img/gena.jpeg')}}" style="width:200px;border-radius:20px">
                                     <p class="m-b-0">Sistem Pembelajaran lebih efisien</p><a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
                                     <p class="text-center m-0"><em>* Limited time Offer</em></p>
                                     </small>
@@ -307,7 +313,7 @@
                             <div class="col-lg-7-5 p-l-0">
                                     <center>
                                     <h4 style="color:rgb(255, 69, 70)">Sekolahku</h4>
-                                    <h2 class="text-lg text-theme lh80 m-b-30">70%</h2>
+                                     <img src="{{asset('plugins/img/sekolahku.jpeg')}}" style="width:200px;border-radius:20px">
                                     <p class="m-b-0">Sistem Pembelajaran lebih efisien</p><a class="btn btn-shadow btn-rounded btn-block m-t-10">Gabung Sekarang!!</a><small class="t300">
                                     <p class="text-center m-0"><em>* Limited time Offer</em></p>
                                     </small>
@@ -319,9 +325,9 @@
                     </li>
                 </ul>
             </li>
-            <li><a style="font-family: Poppins" style="font-family: Poppins" href="/sekolah">SeCara</a>
-            <li><a style="font-family: Poppins" href="index.html">Tentang Semud</a></li>
-            <li><a style="font-family: Poppins" href="#">Bantuan</a>
+            <li><a style="font-family: Poppins" style="font-family: Poppins" href="">SeCara</a>
+            <li><a style="font-family: Poppins" href="">Tentang Semud</a></li>
+            <li><a style="font-family: Poppins" href="">Bantuan</a>
             </li>
         </ul>
     </nav>
@@ -338,8 +344,7 @@
     
                             <div class="copyright-content">
                                 <div class="container">
-                                    <div class="copyright-text text-center">&copy; 2020 SEMUD - SEKOLAH MUDAH.
-                                        All Rights Reserved.</div>
+                                    <div class="copyright-text text-center">&copy; 2021 dSociety - Powered by SEKOLAH MUDAH.</div>
                                     </div>
                                 </div>
     </footer>

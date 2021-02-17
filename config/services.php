@@ -31,9 +31,9 @@ return [
     ],
 
     'facebook' => [
-        'client_id'     => '233139118449936',
-        'client_secret' => 'dc07b70a1fe5fca59261b95c0a7f78f6',
-        'redirect'      => 'https://127.0.0.1:8000/auth/facebook/callback',
+        'client_id'     => '1319383241761791',
+        'client_secret' => '4b8bc2172c49cc9a20f1f757c9bb7898',
+        'redirect'      => 'http://127.0.0.1:8000/auth/facebook/callback',
     ],
 
     'google' => [
