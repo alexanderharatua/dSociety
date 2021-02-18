@@ -9,7 +9,7 @@
 
     <x-slot name="form">
         <!-- Profile Photo -->
-        @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+        {{-- @if (Laravel\Jetstream\Jetstream::managesProfilePhotos()) --}}
             <div x-data="{photoName: null, photoPreview: null}" class="col-span-6 sm:col-span-4">
                 <!-- Profile Photo File Input -->
                 <input type="file" class="hidden"
@@ -25,7 +25,6 @@
                             " />
 
                 <x-jet-label for="photo" value="{{ __('Photo') }}" />
-
                 <!-- Current Profile Photo -->
                 <div class="mt-2" x-show="! photoPreview">
                     <img src="{{ $this->user->profile_photo_url }}" alt="{{ $this->user->name }}" class="rounded-full h-20 w-20 object-cover">
@@ -50,7 +49,7 @@
 
                 <x-jet-input-error for="photo" class="mt-2" />
             </div>
-        @endif
+        {{-- @endif --}}
 
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">

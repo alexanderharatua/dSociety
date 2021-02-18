@@ -25,7 +25,7 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/soal', function () {
+Route::get('/dashboard', function () {
     return view('navigasi');
 });
 
@@ -50,11 +50,13 @@ Route::get('/getsekolah', [SekolahController::class , 'getdata']);
 // Route::get('auth/google', 'App\Http\Controllers\Auth\GoogleController@redirectToGoogle');
 // Route::get('auth/google/callback', 'App\Http\Controllers\Auth\GoogleController@handleGoogleCallback');
 
+
 Route::get('auth/{driver}', [GoogleController::class, 'redirectToGoogle'])->name('social.auth');
 Route::get('auth/{driver}/callback', [GoogleController::class, 'handleGoogleCallback'])->name('social.callback');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dasbor', function () {
     return view('dashboard');
 })->name('dashboard');
+
 
 

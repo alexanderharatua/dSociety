@@ -167,7 +167,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="address2">Konfirmasi Sandi</label>
-                                        <input type="password" class="form-control" name="password_confirmation" placeholder="" required="required">
+                                        <input type="password" class="form-control" name="password2" placeholder="" required="required">
                                     </div>
                                 </div>
                                 <div class="custom-control custom-checkbox">

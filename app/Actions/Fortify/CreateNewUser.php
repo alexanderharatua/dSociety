@@ -25,9 +25,10 @@ class CreateNewUser implements CreatesNewUsers
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'no_hp' => ['string', 'max:20'],
             'password' => $this->passwordRules(),
+            'password2' => 'password',
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
         ])->validate();
-
+        
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],

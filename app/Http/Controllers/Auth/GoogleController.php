@@ -47,6 +47,7 @@ class GoogleController extends Controller
                 return redirect('/home');
      
             }else{
+                if($finduser->getEmail()){
                 $newUser = User::create([
                     'name' => $user->name,
                     'email' => $user->email,
@@ -55,6 +56,10 @@ class GoogleController extends Controller
                     'access_token'=> $user->token,
                     'password' => encrypt('admin12345')
                 ]);
+
+                }else{
+                    echo "login menggunakan sosmed lain";
+                }
     
                 Auth::login($newUser);
      
